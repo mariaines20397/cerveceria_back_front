@@ -20,7 +20,7 @@
             <div class="form-group mb-2">
                 <input type="text" name="img" class="form-control" placeholder="Img" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.img">
             </div>
-            <button class="btn btn-primary ">Clean</button>
+            <button class="btn btn-primary " type="reset">Clean</button>
             <button class="btn btn-secondary" (click)="addProduct(productForm)" [routerLink]="['/getProduct']">Save</button>
         </form>
     </div>
