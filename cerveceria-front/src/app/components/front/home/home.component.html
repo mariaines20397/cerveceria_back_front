@@ -1,0 +1,43 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&family=Patrick+Hand&family=Satisfy&family=The+Nautigal:wght@700&display=swap"
+  rel="stylesheet">
+<div class="body">
+<div class="portada">
+  <img  src="../../assets/img/portada_cerveza.jpg" alt="" srcset="">
+</div>
+  <img class="logo-portada" src="../../assets/svg/logo_portada.svg" alt="" srcset="">
+  <div class="presentacion">
+    <p> {{"HOME.1" | translate}}</p>
+    <p> {{"HOME.2" | translate}}</p>
+  </div>
+
+  <div class="title">
+    <h2>{{"HOME.DRINKS" | translate}}</h2>
+  </div>
+
+  <div class="container-lg">
+    <div class="card-lg">
+
+      <div><img [routerLink]="['/beer']" src="../../assets/img/beer/beers.jpg" alt="" srcset=""></div>
+      <div class="card-body">
+        <h3 class="title-drink" [routerLink]="['/beer']">{{"BEER.TITLE" | translate}}</h3>
+      </div>
+    </div>
+    <div class="card-lg">
+
+      <div><img [routerLink]="['/champagne']" src="../../assets/img/champagne/champagnes.jpg" alt="" srcset=""></div>
+      <div class="card-body">
+        <h3 class="title-drink" [routerLink]="['/champagne']">{{"CHAMPAGNE.TITLE" | translate}}</h3>
+      </div>
+    </div>
+    <div class="card-lg">
+
+      <div><img [routerLink]="['/vodka']" src="../../assets/img/vodka/vodkas.jpg" alt="" srcset=""></div>
+      <div class="card-body">
+        <h3 class="title-drink" [routerLink]="['/vodka']">{{"VODKA.TITLE" | translate}}</h3>
+      </div>
+    </div>
+  </div>
+</div>

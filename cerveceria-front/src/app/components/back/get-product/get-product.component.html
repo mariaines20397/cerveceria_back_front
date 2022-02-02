@@ -1,0 +1,59 @@
+<!--<div class="card" style="background: black;">
+  <div class="card-body">
+      <form #productForm="ngForm"  >
+
+        <input type="hidden" name="_id" [(ngModel)]="backProduct.selectedProduct._id">
+          <div class="form-group mb-2 mt-2">
+              <input type="number" name="id_product" class="form-control" placeholder="Tipo de bebida" [(ngModel)]="backProduct.selectedProduct.id_product">
+          </div>
+          <div class="form-group mb-2 mt-2">
+              <input type="text" name="name" class="form-control" placeholder="Nombre de la bebida" [(ngModel)]="backProduct.selectedProduct.name">
+          </div>
+          <div class="form-group mb-2">
+              <input type="text" name="description" class="form-control" placeholder="Descripcion" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.description">
+          </div>
+          <div class="form-group mb-2">
+              <input type="text" name="type_product" class="form-control" placeholder="Tipo de producto" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.type_product">
+          </div>
+          <div class="form-group mb-2">
+              <input type="number" name="price" class="form-control" placeholder="Precio" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.price">
+          </div>
+          <div class="form-group mb-2">
+              <input type="text" name="img" class="form-control" placeholder="Img" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.img">
+          </div>
+          <button class="btn btn-primary " type="reset">Clean</button>
+          <button class="btn btn-secondary" (click)="addProduct(productForm)" >Save</button>
+      </form>
+  </div>
+</div>
+-->
+<table class="table table-hover container">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Imagen</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Descripción</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Tipo de producto</th>
+      <th scope="col">Tipo de bebida</th>
+      <th scope="col">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of backProduct.products" >
+      <th scope="row">1</th>
+      <td>{{product.img}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.description}}</td>
+      <td>${{product.price}}</td>
+      <td>{{product.id_product}}</td>
+      <td>{{product.type_product}}</td>
+      <td >
+        <button class="btn btn-secondary btn-sm" [routerLink]="['/editProduct',product._id]" ><i class="fas fa-edit"></i></button>
+        <button class="btn btn-danger btn-sm" (click)="deleteProduct(product._id)"><i class="fas fa-trash-alt"></i></button>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>

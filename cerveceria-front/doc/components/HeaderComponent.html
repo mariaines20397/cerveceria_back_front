@@ -1,0 +1,623 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CERVEZAS </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">CERVEZAS </a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HeaderComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/header/header.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-header</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./header.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./header.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#activeLang" >activeLang</a>
+                            </li>
+                            <li>
+                                <a href="#menu" >menu</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#changeLang" >changeLang</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#Menu" >Menu</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(translate: TranslateService)</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLang"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>changeLang</b></span>
+                        <a href="#changeLang"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>changeLang(lang: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Función usada para traducir la pagina</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lang</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="Menu"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>Menu</b></span>
+                        <a href="#Menu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>Menu()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Función que cambia el valor de menu cuando sea clickeado.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activeLang"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>activeLang</b></span>
+                        <a href="#activeLang"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variable que almecena el lenguaje activo</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="menu"></a>
+                    <span class="name">
+                        <span ><b>menu</b></span>
+                        <a href="#menu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Variable boolean que ayudará a saber su fue seleccionado el menu</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;link rel&#x3D;&quot;preconnect&quot; href&#x3D;&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel&#x3D;&quot;preconnect&quot; href&#x3D;&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href&#x3D;&quot;https://fonts.googleapis.com/css2?family&#x3D;Amatic+SC&amp;family&#x3D;Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&amp;family&#x3D;Satisfy&amp;family&#x3D;The+Nautigal:wght@700&amp;display&#x3D;swap&quot; rel&#x3D;&quot;stylesheet&quot;&gt;
+&lt;div class&#x3D;&quot;header &quot;&gt;
+    &lt;div class&#x3D;&quot;menu&quot;&gt;&lt;button class&#x3D;&quot;btn&quot; (click)&#x3D;&quot;Menu()&quot;&gt;&lt;img src&#x3D;&quot;../../assets/svg/menu.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/button&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;logo&quot; &gt;&lt;button class&#x3D;&quot;btn&quot; [routerLink]&#x3D;&quot;[&#x27;/&#x27;]&quot;&gt;&lt;img src&#x3D;&quot;../../assets/svg/logo.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/button&gt;&lt;/div&gt;
+
+    &lt;div class&#x3D;&quot; lang&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot;  id&#x3D;&quot;btn-lang&quot;&gt;
+        &lt;div class&#x3D;&quot;btn-lang&quot;&gt;
+            &lt;button class&#x3D;&quot;btn&quot;&gt;
+                &lt;img src&#x3D;&quot;../../assets/img/mundo.png&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;br&gt;
+                
+            &lt;label class&#x3D;&quot;btn-title&quot; for&#x3D;&quot;btn-lang&quot;&gt; &lt;b&gt; {{&quot;HEADER.IDIOM&quot; | translate}} &lt;/b&gt; &lt;/label&gt;&lt;/button&gt;
+            
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;option-lang&quot;&gt;
+        &lt;p (click)&#x3D;&quot;changeLang(&#x27;ES&#x27;)&quot; [ngClass]&#x3D;&quot;{&#x27;active&#x27;: activeLang &#x3D;&#x3D;&#x3D; &#x27;ES&#x27;}&quot;&gt;&lt;img src&#x3D;&quot;../../assets/svg/argentina.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/p&gt;
+        &lt;p (click)&#x3D;&quot;changeLang(&#x27;EN&#x27;)&quot; [ngClass]&#x3D;&quot;{&#x27;active&#x27;: activeLang &#x3D;&#x3D;&#x3D; &#x27;EN&#x27;}&quot;&gt;&lt;img src&#x3D;&quot;../../assets/svg/eeuu.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;cart&quot;&gt;&lt;button class&#x3D;&quot;btn&quot; [routerLink]&#x3D;&quot;[&#x27;/cart&#x27;]&quot;&gt;&lt;img src&#x3D;&quot;../../assets/svg/cart.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/button&gt;&lt;/div&gt;
+    &lt;div class&#x3D;&quot;search&quot;&gt;&lt;button class&#x3D;&quot;btn&quot;&gt;&lt;img src&#x3D;&quot;../../assets/svg/search.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/button&gt;&lt;/div&gt;
+    
+&lt;/div&gt;
+&lt;div *ngIf&#x3D;&quot;menu&quot; class&#x3D;&quot;abrirMenu&quot;&gt;
+    &lt;div class&#x3D;&quot;listMenu&quot;&gt;
+        &lt;div&gt;&lt;button class&#x3D;&quot;btn&quot; [routerLink]&#x3D;&quot;[&#x27;/beer&#x27;]&quot;&gt;&lt;h4&gt;{{&#x27;BEER.TITLE&#x27; | translate}}&lt;/h4&gt;&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button class&#x3D;&quot;btn&quot; [routerLink]&#x3D;&quot;[&#x27;/vodka&#x27;]&quot;&gt;&lt;h4&gt;{{&#x27;VODKA.TITLE&#x27; | translate}}&lt;/h4&gt;&lt;/button&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;button class&#x3D;&quot;btn&quot; [routerLink]&#x3D;&quot;[&#x27;/champagne&#x27;]&quot;&gt;&lt;h4&gt;{{&#x27;CHAMPAGNE.TITLE&#x27; | translate}}&lt;/h4&gt;&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./header.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../styles.scss&#x27;;
+
+.abrirMenu{
+    display: flex;
+    height: 50vh;
+    background: $degrade-card;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    h4 {
+        font-family: $font-family-body;
+    font-size: 1.3rem;
+        color: $white;
+    }
+}
+
+#btn-lang{
+    display: none;
+}
+
+.option-lang p{
+    display: block;
+    width: 55px;
+    height: 40px;
+    line-height: 55px;
+    text-align: center;
+   transition: all 500ms ease;
+}
+.lang{
+    position: absolute;
+   z-index: 10px;
+    left: 150px;
+    top: 2px;
+    
+}
+
+
+.option-lang p{
+    margin: -5px;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-lang:checked~ .option-lang p{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+    
+
+}
+.header{
+   background: $degrade-dorado;
+    border: 0.7px solid $dark;
+    height: 70px;
+    width: auto;
+    display: flex;
+    .menu {
+        
+     
+        padding: 10px;
+    }
+    .menu:hover{
+        background:$header-hover ;
+        border-radius: 50%;
+    }
+    .logo{
+        
+        padding: 10px;
+    }
+    
+    
+    
+    .cart{
+        
+        margin-left: auto;
+        padding: 10px;
+    }
+    .cart:hover{
+        background: $header-hover;
+        border-radius: 50%;
+    }
+    
+    .search{
+        
+        padding: 10px;
+    }
+    .search:hover{
+        background: $header-hover;
+        border-radius: 50%;
+    }
+    
+    
+}
+@media screen and (max-width: 360px) {
+.header{
+    
+    .logo{
+        display: none;
+    }
+}
+.lang{
+    
+    left: 50px;
+    top: 2px;
+    
+}
+}
+
+
+
+</code></pre>
+    </div>
+
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&family=Satisfy&family=The+Nautigal:wght@700&display=swap" rel="stylesheet"><div class="header ">    <div class="menu"><button class="btn" (click)="Menu()"><img src="../../assets/svg/menu.svg" alt="" srcset=""></button></div>    <div class="logo" ><button class="btn" [routerLink]="[\'/\']"><img src="../../assets/svg/logo.svg" alt="" srcset=""></button></div>    <div class=" lang">        <input type="checkbox"  id="btn-lang">        <div class="btn-lang">            <button class="btn">                <img src="../../assets/img/mundo.png" alt="" srcset=""><br>                            <label class="btn-title" for="btn-lang"> <b> {{"HEADER.IDIOM" | translate}} </b> </label></button>                    </div>        <div class="option-lang">        <p (click)="changeLang(\'ES\')" [ngClass]="{\'active\': activeLang === \'ES\'}"><img src="../../assets/svg/argentina.svg" alt="" srcset=""></p>        <p (click)="changeLang(\'EN\')" [ngClass]="{\'active\': activeLang === \'EN\'}"><img src="../../assets/svg/eeuu.svg" alt="" srcset=""></p>    </div>        </div>    <div class="cart"><button class="btn" [routerLink]="[\'/cart\']"><img src="../../assets/svg/cart.svg" alt="" srcset=""></button></div>    <div class="search"><button class="btn"><img src="../../assets/svg/search.svg" alt="" srcset=""></button></div>    </div><div *ngIf="menu" class="abrirMenu">    <div class="listMenu">        <div><button class="btn" [routerLink]="[\'/beer\']"><h4>{{\'BEER.TITLE\' | translate}}</h4></button></div>        <div><button class="btn" [routerLink]="[\'/vodka\']"><h4>{{\'VODKA.TITLE\' | translate}}</h4></button></div>        <div><button class="btn" [routerLink]="[\'/champagne\']"><h4>{{\'CHAMPAGNE.TITLE\' | translate}}</h4></button></div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BeerComponent', 'selector': 'app-beer'},{'name': 'CarritoComponent', 'selector': 'app-carrito'},{'name': 'ChampagneComponent', 'selector': 'app-champagne'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CoverageComponent', 'selector': 'app-coverage'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HowtocallComponent', 'selector': 'app-howtocall'},{'name': 'ProviderComponent', 'selector': 'app-provider'},{'name': 'SecurityComponent', 'selector': 'app-security'},{'name': 'VodkaComponent', 'selector': 'app-vodka'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HeaderComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HeaderComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<div class="card" style="background: black;">
+    <div class="card-body">
+        <form #productForm="ngForm"  >
+            <h2>Crear rpoducto</h2>
+            <div class="form-group mb-2 mt-2">
+                <input type="number" name="id_product" class="form-control" placeholder="Tipo de bebida" [(ngModel)]="backProduct.selectedProduct.id_product">
+            </div>
+            <div class="form-group mb-2 mt-2">
+                <input type="text" name="name" class="form-control" placeholder="Nombre de la bebida" [(ngModel)]="backProduct.selectedProduct.name">
+            </div>
+            <div class="form-group mb-2">
+                <input type="text" name="description" class="form-control" placeholder="Descripcion" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.description">
+            </div>
+            <div class="form-group mb-2">
+                <input type="text" name="type_product" class="form-control" placeholder="Tipo de producto" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.type_product">
+            </div>
+            <div class="form-group mb-2">
+                <input type="number" name="price" class="form-control" placeholder="Precio" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.price">
+            </div>
+            <div class="form-group mb-2">
+                <input type="text" name="img" class="form-control" placeholder="Img" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.img">
+            </div>
+            <button class="btn btn-primary ">Clean</button>
+            <button class="btn btn-secondary" (click)="addProduct(productForm)" [routerLink]="['/getProduct']">Save</button>
+        </form>
+    </div>
+</div>
+

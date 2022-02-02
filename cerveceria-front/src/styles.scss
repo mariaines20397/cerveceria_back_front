@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+
+
+/* Variables */
+$dark: #000000;
+$white: #FFFF;
+$light-blue: #005790;
+$medium-blue: #006EAB;
+$degrade-card: linear-gradient(#424242, #686d6e);
+//$degrade-header-footer:linear-gradient(#492905, #cc720c);
+$hover-filter:rgb(98, 96, 96);
+$reverse-hover-filter:radial-gradient(circle,rgb(131, 130, 130),rgb(199, 192, 192));
+$footer-modal:linear-gradient(#75797a,#676769 );
+$degrade-dorado:linear-gradient(#492905, #cc720c);
+$dorado:#cc720c;
+$font-family-body: 'Raleway', sans-serif;
+$font-family-title: 'Bungee Shade', cursive;
+$salmon:salmon;
+$header-hover:radial-gradient(circle,rgb(200, 193, 193),rgb(212, 205, 205));
+$footer-hover: radial-gradient(circle,rgb(199, 192, 192),rgb(131, 130, 130));

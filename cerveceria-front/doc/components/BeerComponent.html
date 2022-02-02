@@ -1,0 +1,1472 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CERVEZAS </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">CERVEZAS </a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  BeerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/beer/beer.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-beer</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./beer.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./beer.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#arrCarrito" >arrCarrito</a>
+                            </li>
+                            <li>
+                                <a href="#arrProductCarrito" >arrProductCarrito</a>
+                            </li>
+                            <li>
+                                <a href="#arrProducts" >arrProducts</a>
+                            </li>
+                            <li>
+                                <a href="#arrProductsNew" >arrProductsNew</a>
+                            </li>
+                            <li>
+                                <a href="#carrito" >carrito</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#carritoService" >carritoService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modal" >modal</a>
+                            </li>
+                            <li>
+                                <a href="#newArray" >newArray</a>
+                            </li>
+                            <li>
+                                <a href="#priceFilter" >priceFilter</a>
+                            </li>
+                            <li>
+                                <a href="#productFilter" >productFilter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#productService" >productService</a>
+                            </li>
+                            <li>
+                                <a href="#type_product" >type_product</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#activarBtn" >activarBtn</a>
+                            </li>
+                            <li>
+                                <a href="#activarBtnPrice" >activarBtnPrice</a>
+                            </li>
+                            <li>
+                                <a href="#clear" >clear</a>
+                            </li>
+                            <li>
+                                <a href="#clearPrice" >clearPrice</a>
+                            </li>
+                            <li>
+                                <a href="#filtrar" >filtrar</a>
+                            </li>
+                            <li>
+                                <a href="#filtrarPrice" >filtrarPrice</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modal: NgbModal, productService: <a href="../injectables/ProductService.html" target="_self">ProductService</a>, carritoService: <a href="../injectables/CarritoService.html" target="_self">CarritoService</a>)</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Se pasa como parametro del constructor el modal y el servicio</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modal</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgbModal</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Parametro de tipo NgbModal</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>productService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProductService.html" target="_self" >ProductService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <p>Parametro de tipo ProductService</p>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>carritoService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CarritoService.html" target="_self" >CarritoService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activarBtn"></a>
+                    <span class="name">
+                        <span ><b>activarBtn</b></span>
+                        <a href="#activarBtn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>activarBtn()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Esta funcion activa el boton de clear cuando se activa un checkbox del filtrado de tipo
+de cerveza.
+Primero recorre con un foreach el arreglo productFilter, se pregunta si algun check es true, entonces toma el elemento con
+el id clear y cambia el valor de disabled a false</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activarBtnPrice"></a>
+                    <span class="name">
+                        <span ><b>activarBtnPrice</b></span>
+                        <a href="#activarBtnPrice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>activarBtnPrice(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Esta funcion activa el boton de clearPrice cuando se activa un checkbox del filtrado por precio.
+Primero se pregunta si algun check es true, entonces toma el elemento con
+el id clearPrice y cambia el valor de disabled a false</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Evento usado para luego obtener los valores que tienen el checked</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clear"></a>
+                    <span class="name">
+                        <span ><b>clear</b></span>
+                        <a href="#clear"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clear()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Parecido a la funcion clearPrice, pero esta funcion recorre con un foreach el array
+productFilter y verifica si el checked esta en true, si es asi, le cambia el valor a
+false</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearPrice"></a>
+                    <span class="name">
+                        <span ><b>clearPrice</b></span>
+                        <a href="#clearPrice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearPrice()</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>La funcion clearPrice recorre con un foreach el arreglo priceFilter. Luego pregunta
+si algun check esta activado, de ser asi, al presionar el boton de limpiar llamará a
+esta función y colocará en false el checked de los checkbox.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filtrar"></a>
+                    <span class="name">
+                        <span ><b>filtrar</b></span>
+                        <a href="#filtrar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filtrar(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Funcion Filtrar, filtra los elementos según el tipo de cerveza que el usuario seleccione.</p>
+<p>Verifica si hay algún check seleccionado. Si es true, entonces guarda en un arreglo
+vacio los elementos que se filtraron con el método filter() endonde se pregunta si
+el id del archivo product.ts es igual al valor del checkbox seleccionado.
+Luego, mediante un foreach se recorre el arreglo productFilter y se pregunta si
+el valor del check es igual al id de una posicion del arreglo. Si es asi entonces se
+cambia el valor de checked a true indicando que el check fue seleccionado, siendo que
+en un principio estaba en false (valor inicializado en el arreglo). Luego se lo deja vacio
+al array arrProducts que  en un principio contenia todo el listado de productos que se
+mostraba en pantalla.
+Despues se hace un push a un nuevo arreglo(newArray) con los valores que se almacenaron
+en type_product al principio para que luego este arreglo sea iterado por dos for
+para recorrer el array de objetos. Por último, se hace un push a arrProducts con los elementos
+resultado de los iteradores.</p>
+<p>y el value del input</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Evento usado para luego obtener los valores que tienen el checked 
+y el value del input</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filtrarPrice"></a>
+                    <span class="name">
+                        <span ><b>filtrarPrice</b></span>
+                        <a href="#filtrarPrice"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>filtrarPrice(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Parecido a la funcion filtrar pero filtrarPrice filtra los elementos por precio
+y el value del input</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Evento usado para luego obtener los valores que tienen el checked 
+y el value del input</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="arrCarrito"></a>
+                    <span class="name">
+                        <span ><b>arrCarrito</b></span>
+                        <a href="#arrCarrito"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Array que contendrá la cantidad de productos seleccionados para agregar al carrito</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="arrProductCarrito"></a>
+                    <span class="name">
+                        <span ><b>arrProductCarrito</b></span>
+                        <a href="#arrProductCarrito"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="arrProducts"></a>
+                    <span class="name">
+                        <span ><b>arrProducts</b></span>
+                        <a href="#arrProducts"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>beer</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Array que contiene los elementos de beer.ts usado en la funcion de filtrar y
+filtrarPrice, tambien usado para mostrar los elementos en pantalla</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="arrProductsNew"></a>
+                    <span class="name">
+                        <span ><b>arrProductsNew</b></span>
+                        <a href="#arrProductsNew"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>beer</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Array que contiene los elementos de beer.ts usado en el metodo filter, aplicado
+en la funcion de filtrar y filtrarPrice. Esto es asi porque si el usuario quiere
+filtrar por dos precios o por dos tipos de cerveza entonces podra hacerlo.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="carrito"></a>
+                    <span class="name">
+                        <span ><b>carrito</b></span>
+                        <a href="#carrito"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Array que contendrá el resultado del filter</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="carritoService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>carritoService</b></span>
+                        <a href="#carritoService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CarritoService.html" target="_self" >CarritoService</a></code>
+
+                    </td>
+                </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modal"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>modal</b></span>
+                        <a href="#modal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>NgbModal</code>
+
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description">Parametro de tipo NgbModal</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newArray"></a>
+                    <span class="name">
+                        <span ><b>newArray</b></span>
+                        <a href="#newArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Este arreglo contendrá el valor de type_product. Será usado en las funciones de
+filtrar y filtrarPrice para ser recorrido por for.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="priceFilter"></a>
+                    <span class="name">
+                        <span ><b>priceFilter</b></span>
+                        <a href="#priceFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Array para traer los valores de priceFilter desde el servicio</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="productFilter"></a>
+                    <span class="name">
+                        <span ><b>productFilter</b></span>
+                        <a href="#productFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Array para traer los valores de productFilter desde el servicio</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="productService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>productService</b></span>
+                        <a href="#productService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ProductService.html" target="_self" >ProductService</a></code>
+
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description">Parametro de tipo ProductService</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="type_product"></a>
+                    <span class="name">
+                        <span ><b>type_product</b></span>
+                        <a href="#type_product"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Guarda el resultado que se arroje luego de aplicar el metodo filter() en la funcion
+filtrar y filtrarPrice. Luego es usado como parametro del metodo push aplicado en
+newArray.</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+&lt;div class&#x3D;&quot;body&quot;&gt;
+  &lt;div class&#x3D;&quot;title&quot; &gt;
+    &lt;div class&#x3D;&quot;title-chico&quot;&gt;
+    &lt;h1  id&#x3D;&#x27;title&#x27;&gt;{{&#x27;BEER.TITLE&#x27; | translate}}&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;container-lg  container-xs&quot;&gt;
+  
+    &lt;div class&#x3D;&quot;card-lg card-xs &quot; *ngFor&#x3D;&quot;let product of arrProducts&quot; &gt;
+        &lt;img src&#x3D;&quot;{{product.img}}&quot; class&#x3D;&quot;card-img-top img-beer&quot; alt&#x3D;&quot;...&quot;&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;h5 class&#x3D;&quot;card-title&quot;&gt; &lt;b&gt; {{product.name}} &lt;/b&gt;&lt;/h5&gt;
+          &lt;p class&#x3D;&quot;card-text&quot;&gt;{{product.description}}&lt;/p&gt;
+          &lt;p class&#x3D;&quot;card-price&quot;&gt; &lt;b&gt; ${{product.price}}&lt;/b&gt;&lt;/p&gt;
+
+          
+        &lt;/div&gt; 
+        &lt;button class&#x3D;&quot;btn btn-add&quot; value&#x3D;&quot;{{product.id}}&quot;  &gt;&lt;b&gt; {{&#x27;BEER.ADD&#x27; | translate}} &lt;/b&gt;&lt;/button&gt;
+      &lt;/div&gt;
+      
+      
+ 
+     
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ng-template #filter let-modal &gt;
+ &lt;!-----------------------------------MODAL FILTRO TIPO DE CER----------------------------&gt;
+  &lt;div class&#x3D;&quot;modal-header &quot;&gt;
+    &lt;h1 class&#x3D;&quot;modal-title&quot;&gt; &lt;b&gt; {{&#x27;BEER.FILTER&#x27; | translate}}&lt;/b&gt;&lt;/h1&gt;
+    &lt;button class&#x3D;&quot;btn btn-close&quot; (click)&#x3D;&quot;modal.dismiss()&quot;&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;modal-body &quot;&gt;
+    &lt;table class&#x3D;&quot;table table-sm table-hover modal-table&quot; id&#x3D;&quot;table&quot;&gt;
+      
+      &lt;tbody class&#x3D;&quot;tbody-modal&quot;&gt;
+        &lt;tr *ngFor&#x3D;&quot;let filter of productFilter;index as i&quot;&gt;
+          &lt;th class&#x3D;&quot;type-filter&quot;&gt; &lt;h5&gt; &lt;b&gt; {{filter.name}}  &lt;/b&gt; &lt;/h5&gt; &lt;/th&gt;
+          &lt;th class&#x3D;&quot;options&quot; &gt; &lt;input type&#x3D;&quot;{{filter.type}}&quot; value&#x3D;&quot;{{filter.id}}&quot;   (click)&#x3D;&quot;filtrar($event)&quot; (click)&#x3D;&quot;activarBtn()&quot; [checked]&#x3D;&quot;filter.checked&quot; id&#x3D;&quot;option&quot; name&#x3D;&quot;option&quot;&gt;  &lt;/th&gt;
+      
+      
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;footer-modal&quot;&gt;
+ 
+      &lt;button class&#x3D;&quot;btn clear-filter &quot; id&#x3D;&quot;clear&quot; name&#x3D;&quot;clear&quot;  (click)&#x3D;&quot;clear()&quot;  disabled&gt; &lt;h6&gt;&lt;b &gt; {{&quot;BEER.CLEAN&quot; | translate}}&lt;/b&gt;&lt;/h6&gt;&lt;/button&gt;
+      &lt;button class&#x3D;&quot;btn filter&quot; id&#x3D;&quot;filtrar&quot; name&#x3D;&quot;filtrar&quot;  (click)&#x3D;&quot;modal.close()&quot;&gt; &lt;b&gt; {{&quot;BEER.FILTERS&quot; |translate}}&lt;/b&gt; &lt;/button&gt;
+     
+  &lt;/div&gt;
+
+  
+&lt;/ng-template&gt;
+&lt;ng-template #filterPrice let-modal&gt;
+ &lt;div class&#x3D;&quot;modal-header &quot;&gt;
+  &lt;h1 class&#x3D;&quot;modal-title&quot;&gt; &lt;b&gt; {{&#x27;BEER.FILTER.PRICE&#x27; | translate}}&lt;/b&gt;&lt;/h1&gt;
+  &lt;button class&#x3D;&quot;btn btn-close&quot; (click)&#x3D;&quot;modal.dismiss()&quot;&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;modal-body &quot;&gt;
+ &lt;table class&#x3D;&quot;table table-sm table-hover&quot; id&#x3D;&quot;table&quot;&gt;
+  
+  &lt;tbody class&#x3D;&quot;tbody-modal&quot;&gt;
+    &lt;tr *ngFor&#x3D;&quot;let filter of priceFilter;index as i&quot;&gt;
+      &lt;th class&#x3D;&quot;type-filter&quot;&gt; &lt;h5&gt; &lt;b&gt; {{filter.name}} &lt;/b&gt; &lt;/h5&gt; &lt;/th&gt;
+      &lt;th class&#x3D;&quot;options&quot; &gt; &lt;input type&#x3D;&quot;{{filter.type}}&quot; value&#x3D;&quot;{{filter.id}}&quot;   (click)&#x3D;&quot;filtrarPrice($event)&quot; (click)&#x3D;&quot;activarBtnPrice($event)&quot; [checked]&#x3D;&quot;filter.checked&quot; id&#x3D;&quot;option&quot; name&#x3D;&quot;option&quot;&gt;  &lt;/th&gt;
+  
+  
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;footer-modal&quot;&gt;
+  &lt;button class&#x3D;&quot;btn clear-filter &quot; id&#x3D;&quot;clearPrice&quot; name&#x3D;&quot;clear&quot;  (click)&#x3D;&quot;clearPrice()&quot;  [disabled]&#x3D;&quot;true&quot;&gt; &lt;h6&gt;&lt;b &gt; {{&quot;BEER.CLEAN&quot; | translate}}&lt;/b&gt;&lt;/h6&gt;&lt;/button&gt;
+  &lt;button class&#x3D;&quot;btn filter&quot; id&#x3D;&quot;filtrar&quot; name&#x3D;&quot;filtrar&quot;  (click)&#x3D;&quot;modal.close()&quot;&gt; &lt;b&gt; {{&quot;BEER.FILTERS&quot; |translate}}&lt;/b&gt; &lt;/button&gt;
+ 
+&lt;/div&gt;
+  
+&lt;/ng-template&gt;
+
+
+
+&lt;div class&#x3D;&quot; filt&quot;&gt;
+  &lt;input type&#x3D;&quot;checkbox&quot;  id&#x3D;&quot;btn-filt&quot;&gt;
+ &lt;!-- &lt;div class&#x3D;&quot;btn-lang&quot;&gt;
+      &lt;label for&#x3D;&quot;btn-lang&quot;&gt; &lt;b&gt; {{&quot;HEADER.IDIOM&quot; | translate}} &lt;/b&gt; &lt;/label&gt;
+      
+  &lt;/div&gt;--&gt;
+  &lt;div class&#x3D;&quot;option-filt&quot;&gt;
+  &lt;p class&#x3D;&quot;filt-price&quot; (click)&#x3D;&quot;modal.open(filter)&quot; &gt;&lt;img src&#x3D;&quot;../../assets/svg/beer.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/p&gt;
+  &lt;p class&#x3D;&quot;filt-type&quot; (click)&#x3D;&quot;modal.open(filterPrice)&quot; &gt;&lt;img src&#x3D;&quot;../../assets/svg/dolar.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;div-filter&quot;&gt;
+  &lt;label for&#x3D;&quot;btn-filt&quot;&gt; &lt;img src&#x3D;&quot;../../assets/svg/filters.svg&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot; &gt;&lt;/label&gt;
+ 
+  
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./beer.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../styles.scss&#x27;;
+
+
+.body{
+    background: $dark;
+   //background: url(../../assets/img/portada_cerveza.jpg) no-repeat;
+   
+   
+    padding-bottom: 25px;
+    font-family: $font-family-body;
+  
+}
+#title{
+    font-family: $font-family-title;
+    
+   //font-family: &#x27;Lemon&#x27;, cursive;
+    font-size: 5.3rem;
+    
+    
+}
+
+.title{
+    text-decoration: none;
+     height: 20vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: $dark;
+     color: $white;
+     
+    
+    // font-family: &#x27;Barlow Semi Condensed&#x27;, sans-serif;
+ 
+    
+ }
+
+.container-lg{
+    display: grid;
+    grid-template-columns: repeat(4,5fr) ;
+    grid-gap: 15px;
+    
+}
+.card-lg{
+    width: 15rem;
+    text-align: center;
+    border: 1px solid $dark;
+    border-radius: 1%;
+    //color: $white;
+    color: $dark;
+    transition: all 500ms ease;  
+}
+.card-lg:hover{
+    transform: scale(0.9);
+}
+.card-body{
+    background: $degrade-card;
+    
+}
+.img-beer{
+    background: $white;
+     
+}
+
+.card-text{
+    height: 70px;
+}
+.btn-add{
+   
+    width: 100%;
+   // background: #cc720c;
+   background: $degrade-dorado;
+   // color: $white;
+    //border: none;
+    color: $dark;
+    
+}
+
+#btn-filt{
+    display: none;
+}
+.filt{
+    
+     position: fixed;
+     bottom: 20px ;
+     right: 35px;
+     text-align: center;
+    
+    // background: $white;
+     
+ }
+ .option-filt p, .div-filter{
+     display: block;
+     //background: $white;
+     color: $white;
+     height: 55px;
+     width: 55px;
+     text-align: center;
+     border-radius: 50%;
+     transition: all 500ms ease;
+ }
+ 
+ .div-filter:hover{
+    background: $hover-filter;
+ }
+ .option-filt p{
+     margin-bottom: -15px;
+     opacity: 0;
+     visibility: hidden;
+ }
+ #btn-filt:checked~ .option-filt p{
+     margin-bottom: 10px;
+     opacity: 1;
+     visibility: visible;
+ }
+
+.card-vinos{
+   
+   grid-column: 1/ span 2;
+}
+.btn-close{
+    position: absolute;
+    right: 30px;
+    color: $white;
+}
+.btn-close:hover{
+    color: $white;
+}
+.modal-body {
+    background: $degrade-card;
+    color: $white;
+}
+.tbody-modal{
+    color: $white;
+}
+.modal-header{
+    background: $degrade-dorado;
+    color: $dark;
+    text-align: center;
+}
+.title-table{
+    text-align: center;
+}
+.type-filter{
+   padding-left:80px ;
+}
+.footer-modal{
+    background: $footer-modal;
+    
+    display: flex;
+    justify-content: center;
+}
+.filter{
+    //display: flex;
+    text-align: center;
+    color: $white;
+    width: 120px;
+    background: $medium-blue;
+    margin: 15px;
+
+    
+}
+
+.clear-filter{
+   background: salmon;
+    text-align: center;
+    color:$white;
+    width: 120px;
+    margin: 15px;
+    border: 2px solid salmon;
+    
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-xs{
+        display: grid;
+        grid-template-columns: repeat(3, 18fr);
+        grid-gap: 5px;
+    }
+    .filt{
+    
+        bottom: 5px ;
+        right: 10px;
+        
+    }
+    .div-filter{
+        background: $dark;
+
+     }
+     #title{
+        
+        font-size: 4rem;
+    }
+   
+}
+
+@media screen and (max-width: 576px) {
+    .container-xs{
+        display: grid;
+        grid-template-columns: repeat(2, 18fr);
+        grid-gap: 5px;
+    }
+    .filt{
+    
+        bottom: 5px ;
+        right: 10px;
+        
+    }
+    .div-filter{
+        background: $dark;
+
+     }
+     #title{
+        
+        font-size: 3rem;
+    }
+   
+}
+@media screen and (max-width: 360px) {
+    .container-xs{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 3px;
+        
+    }
+    .card-lg{
+        width: 10rem;
+        text-align: center;
+        border: 1px solid $dark;
+        border-radius: 1%;
+        
+        .card-title{
+            font-size: 12px;
+        }
+        .card-text{
+            font-size: 12px;
+        }
+        .card-price{
+            font-size: medium;
+        }
+        
+    }
+    .btn-filter{
+        position: fixed;
+        bottom: 20px ;
+        text-align: center;
+        width: 60px;
+        background: $reverse-hover-filter;
+        
+        border-radius: 50%;
+    }
+    .btn-filter:hover{
+        background: $hover-filter;
+         border: 2px solid $white;
+    }
+    .filt{
+    
+        bottom: 5px ;
+        right: 10px;
+        
+    }
+    .div-filter{
+        background: $dark;
+
+     }
+     #title{
+        
+        font-size: 2.2rem;
+    }
+   
+}
+
+</code></pre>
+    </div>
+
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="body">  <div class="title" >    <div class="title-chico">    <h1  id=\'title\'>{{\'BEER.TITLE\' | translate}}</h1>  </div></div><div class="container-lg  container-xs">      <div class="card-lg card-xs " *ngFor="let product of arrProducts" >        <img src="{{product.img}}" class="card-img-top img-beer" alt="...">        <div class="card-body">          <h5 class="card-title"> <b> {{product.name}} </b></h5>          <p class="card-text">{{product.description}}</p>          <p class="card-price"> <b> ${{product.price}}</b></p>                  </div>         <button class="btn btn-add" value="{{product.id}}"  ><b> {{\'BEER.ADD\' | translate}} </b></button>      </div>                  </div></div><ng-template #filter let-modal > <!-----------------------------------MODAL FILTRO TIPO DE CER---------------------------->  <div class="modal-header ">    <h1 class="modal-title"> <b> {{\'BEER.FILTER\' | translate}}</b></h1>    <button class="btn btn-close" (click)="modal.dismiss()"></button>  </div>  <div class="modal-body ">    <table class="table table-sm table-hover modal-table" id="table">            <tbody class="tbody-modal">        <tr *ngFor="let filter of productFilter;index as i">          <th class="type-filter"> <h5> <b> {{filter.name}}  </b> </h5> </th>          <th class="options" > <input type="{{filter.type}}" value="{{filter.id}}"   (click)="filtrar($event)" (click)="activarBtn()" [checked]="filter.checked" id="option" name="option">  </th>                    </tr>      </tbody>    </table>  </div>  <div class="footer-modal">       <button class="btn clear-filter " id="clear" name="clear"  (click)="clear()"  disabled> <h6><b > {{"BEER.CLEAN" | translate}}</b></h6></button>      <button class="btn filter" id="filtrar" name="filtrar"  (click)="modal.close()"> <b> {{"BEER.FILTERS" |translate}}</b> </button>       </div>  </ng-template><ng-template #filterPrice let-modal> <div class="modal-header ">  <h1 class="modal-title"> <b> {{\'BEER.FILTER.PRICE\' | translate}}</b></h1>  <button class="btn btn-close" (click)="modal.dismiss()"></button></div><div class="modal-body "> <table class="table table-sm table-hover" id="table">    <tbody class="tbody-modal">    <tr *ngFor="let filter of priceFilter;index as i">      <th class="type-filter"> <h5> <b> {{filter.name}} </b> </h5> </th>      <th class="options" > <input type="{{filter.type}}" value="{{filter.id}}"   (click)="filtrarPrice($event)" (click)="activarBtnPrice($event)" [checked]="filter.checked" id="option" name="option">  </th>        </tr>  </tbody></table></div><div class="footer-modal">  <button class="btn clear-filter " id="clearPrice" name="clear"  (click)="clearPrice()"  [disabled]="true"> <h6><b > {{"BEER.CLEAN" | translate}}</b></h6></button>  <button class="btn filter" id="filtrar" name="filtrar"  (click)="modal.close()"> <b> {{"BEER.FILTERS" |translate}}</b> </button> </div>  </ng-template><div class=" filt">  <input type="checkbox"  id="btn-filt"> <!-- <div class="btn-lang">      <label for="btn-lang"> <b> {{"HEADER.IDIOM" | translate}} </b> </label>        </div>-->  <div class="option-filt">  <p class="filt-price" (click)="modal.open(filter)" ><img src="../../assets/svg/beer.svg" alt="" srcset=""></p>  <p class="filt-type" (click)="modal.open(filterPrice)" ><img src="../../assets/svg/dolar.svg" alt="" srcset=""></p></div><div class="div-filter">  <label for="btn-filt"> <img src="../../assets/svg/filters.svg" alt="" srcset="" ></label>     </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BeerComponent', 'selector': 'app-beer'},{'name': 'CarritoComponent', 'selector': 'app-carrito'},{'name': 'ChampagneComponent', 'selector': 'app-champagne'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'CoverageComponent', 'selector': 'app-coverage'},{'name': 'ErrorComponent', 'selector': 'app-error'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HowtocallComponent', 'selector': 'app-howtocall'},{'name': 'ProviderComponent', 'selector': 'app-provider'},{'name': 'SecurityComponent', 'selector': 'app-security'},{'name': 'VodkaComponent', 'selector': 'app-vodka'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BeerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BeerComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

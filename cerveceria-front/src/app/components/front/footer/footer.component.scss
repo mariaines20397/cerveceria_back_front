@@ -1,0 +1,95 @@
+@import '../../../../styles.scss';
+*{
+    font-family: $font-family-body;
+    font-size: 1.7rem;
+}
+.footer{
+    background:$reverse-hover-filter;
+    border: 0.7px solid $dark;
+    height: 300px;
+    background: $degrade-dorado;
+}
+
+.help{
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    color: $white;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+
+    button{
+        background: $white;
+        border-radius: 50%;
+        margin: 20px;
+        width: 70px;
+        height: 70px;
+    }
+    button:hover{
+        background: $header-hover;
+    }
+    
+}
+.text{
+    display: flex;
+    justify-content: center;
+    
+    h6{
+        margin-left: 30px;
+        margin-right: 20px;
+        color: $white;
+        
+    }
+    
+}
+.list-footer{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: $dark;
+    div{
+        margin-bottom: 40px;
+        color: $white;
+        h4{
+            cursor: pointer;
+
+        }
+    }
+    button{
+        
+        background: $white;
+        
+        border-radius:51% ;
+    }
+    button:hover{
+        background:$footer-hover ;
+       
+    }
+    img{
+        
+        border-radius: 50%;
+    }
+}
+.footer-end{
+    background: $reverse-hover-filter;
+    border: 0.7px solid $dark;
+    height: 90px;
+    background: $degrade-dorado;
+   // margin-top: 20px;
+}
+
+@media screen and (max-width: 360px)  {
+    .list-footer{
+        padding-top:90px;
+        font-size: 12px;
+        
+        h5{
+            font-size: 0.5rem;
+        }
+
+    }
+    
+   
+}

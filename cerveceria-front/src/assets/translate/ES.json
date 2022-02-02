@@ -1,0 +1,92 @@
+{
+    
+    "HEADER":{
+        "IDIOM":"Lenguaje"
+    },
+    "HOME":{
+        "1":"Nos dedicamos a la Comercialización y Distribución de bebidas hace más de 10 años.",
+        "2":" Gracias a nuestra trayectoria y experiencia en el rubro contamos con la más amplia variedad de productos, marcas, en distintas presentaciones y tamaños.",
+        "3":"Ofrecemos calidad de servicio, aseguramos las condiciones pautadas en materia de entrega y distribución. Contamos con una amplia variedad de productos nacionales e importados de consumo masivo.",
+        "DRINKS":"Nuestras Bebidas"
+    },
+    "FOOTER":{
+        "HELP":"¿Podemos ayudarte?",
+        "CHART":"CHAT",
+        "CALL":"LLAMAR",
+        "ABOUTUS": "SOBRE NOSOTROS",
+        "SECURITY": "MEDIDAS DE SEGURIDAD (COVID-19)",
+        "HOWTOCALL": "COMO MARCAR",
+        "PROVIDER": "PROOVEDORES",
+        "CONTACT": "CONTÁCTENOS",
+        "COVERAGE": "ZONA DE COBERTURA",
+        "POLITICS":"POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES"
+    },
+    "CONTACT": {
+        "CONTACT": "Contáctanos",
+        "EMAIL":"Dirección de Email",
+        "SECURITY":"Nunca compartiremos su correo electrónico con nadie más.",
+        "PASSWORD":"Contraseña",
+        "CHECK": "Ver contaseña",
+        "SUBMIT":"Enviar"
+    },
+    "SECURITY": {
+        "HEADER": "Para evitar la propagación de la COVID‑19, sigue estas recomendaciones:",
+        "BODY":{
+            "1":"- Mantén una distancia de seguridad con otras personas (de 1 metro como mínimo), aunque no parezca que estén enfermas.",
+            "2":"- Utiliza mascarilla en público, especialmente en interiores o cuando no sea posible mantener el distanciamiento físico.",
+            "3":"- Prioriza los espacios abiertos y con buena ventilación en lugar de los espacios cerrados. Si estás en interiores, abre una ventana.",
+            "4":"- Lávate las manos con frecuencia. Usa agua y jabón o un desinfectante de manos a base de alcohol.",
+            "5":"- Vacúnate cuando sea tu turno. Sigue las directrices sobre vacunación de las autoridades locales.",
+            "6":"- Cuando tosas o estornudes, cúbrete la nariz y la boca con el codo flexionado o con un pañuelo.",
+            "7":"- Si no te encuentras bien, quédate en casa."
+        },
+        "FOOTER":"En caso de que tengas fiebre, tos o dificultad para respirar, busca atención médica. Llama por teléfono antes de acudir a tu proveedor de servicios sanitarios para que te dirijan al centro médico adecuado. De esta forma, te protegerás a ti y evitarás la propagación de virus y otras infecciones"
+    },
+    "HOWTOCALL": {
+        "HEADER": "Atención al cliente de 'Cerveza'",
+        "BODY":{
+            "1":"Servicio",
+            "2":"Número",
+            "3":"Atención al cliente",
+            "4":"Telefonía móvil",
+            "5":"Telefonía fija",
+            "6":"Internet"
+        }
+    },
+    "CHAMPAGNE":{
+       
+        "TITLE":"Champán"
+    },
+    "BEER":{
+       
+        "TITLE":"Cerveza",
+        "ADD":"AGREGAR",
+        "FILTER":"FILTROS",
+        "FILTER.PRICE":"FILTRO DE PRECIOS",
+        "CONTINUE":"Sigue marcando",
+        "WINE":"VINOS",
+        "CLEAN":"LIMPIAR",
+        "FILTERS":"FILTRAR"
+    },
+    "VODKA":{
+       
+        "TITLE":"Vodka"
+    },
+    "COVERAGE":{
+        "TITLE":"Área de cobertura",
+        "BODY":"¡Nos encontramos en gran parte de América!"
+    },
+    "PROVIDER":{
+        "TITLE":"Estos son algunos de nuestros proveedores"
+    },
+    "ABOUT":{
+        "TITLE":"Sobre nosotros",
+        "BODY":{
+            "1":"Nos dedicamos a la Comercialización y Distribución de bebidas hace más de 10 años.",
+        "2":" Gracias a nuestra trayectoria y experiencia en el rubro contamos con la más amplia variedad de productos, marcas, en distintas presentaciones y tamaños.",
+        "3":"Ofrecemos calidad de servicio, aseguramos las condiciones pautadas en materia de entrega y distribución. Contamos con una amplia variedad de productos nacionales e importados de consumo masivo."
+        }
+    }
+
+
+}

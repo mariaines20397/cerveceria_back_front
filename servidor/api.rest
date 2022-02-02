@@ -1,0 +1,30 @@
+###
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id_product":1,
+    "name": "Prairie Artisian",
+    "description": "Ales Prairie Noir Whiskey Barrel Aged Imperial Stout 12oz.",
+    "type_product": "Cerveza negra",
+    "price": 85300,
+    "img": "./img/beer/prairie-artisian.png"
+}
+
+###
+GET http://localhost:3000/products/61ef34201930c6c86674f9b0
+
+###
+DELETE http://localhost:3000/products/61eeba8f12cd856af2554546
+
+###
+PUT http://localhost:3000/products/61ef34201930c6c86674f9b0
+Content-Type: application/json
+
+{
+    "img": "../src/img/beer/prairie-artisian.png"
+    
+}

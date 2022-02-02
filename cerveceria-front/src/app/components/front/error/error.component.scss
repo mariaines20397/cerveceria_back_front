@@ -1,0 +1,14 @@
+@import '../../../../styles.scss';
+
+.error{
+    padding: 20px;
+    text-align: center;
+    background: $dark;
+    h2{
+        padding: 30px;
+        text-align: center;
+        font-family: $font-family-body;
+        font-size: 3rem;
+        color: $white;
+    }
+}

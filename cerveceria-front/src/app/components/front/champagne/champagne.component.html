@@ -1,0 +1,99 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&family=Patrick+Hand&family=Satisfy&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+<div class="body">
+    <div class="title" >
+    
+        <h1  id='title'>{{'CHAMPAGNE.TITLE' | translate}}</h1>
+        
+    </div>
+<div class="container-lg  container-xs">
+  
+    <div class="card-lg card-xs " *ngFor="let product of arrchampagne" >
+        <img src="{{product.img}}" class="card-img-top img-beer" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"> <b> {{product.name}} </b></h5>
+          <p class="card-text">{{product.description}}</p>
+          <p class="card-price"> <b> ${{product.price}}</b></p>
+
+          
+        </div> 
+        <a href="#" class="btn btn-add " > <b> {{'BEER.ADD' | translate}} </b></a>
+      </div>
+      
+      
+ 
+     
+</div>
+</div>
+
+<ng-template #filter let-modal >
+ <!-----------------------------------MODAL FILTRO TIPO DE CER---------------------------->
+  <div class="modal-header ">
+    <h1 class="modal-title"> <b> {{'BEER.FILTER' | translate}}</b></h1>
+    <button class="btn btn-close" (click)="modal.dismiss()"></button>
+  </div>
+  <div class="modal-body ">
+    <table class="table table-sm table-hover modal-table" id="table">
+      
+      <tbody class="tbody-modal">
+        <tr *ngFor="let filter of champagneFilter;index as i">
+          <th class="type-filter"> <h5> <b> {{filter.name}}  </b> </h5> </th>
+          <th class="options" > <input type="{{filter.type}}" value="{{filter.id}}"   (click)="filtrar($event)" (click)="activarBtn()" [checked]="filter.checked" id="option" name="option">  </th>
+      
+      
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer-modal">
+ 
+      <button class="btn clear-filter " id="clear" name="clear"  (click)="clear()"  disabled> <h6><b > {{"BEER.CLEAN" | translate}}</b></h6></button>
+      <button class="btn filter" id="filtrar" name="filtrar"  (click)="modal.close()"> <b> {{"BEER.FILTERS" |translate}}</b> </button>
+     
+  </div>
+
+  
+</ng-template>
+
+<ng-template #filterPrice let-modal>
+ <div class="modal-header ">
+  <h1 class="modal-title"> <b> {{'BEER.FILTER.PRICE' | translate}}</b></h1>
+  <button class="btn btn-close" (click)="modal.dismiss()"></button>
+</div>
+<div class="modal-body ">
+ <table class="table table-sm table-hover" id="table">
+  
+  <tbody class="tbody-modal">
+    <tr *ngFor="let filter of priceFilter;index as i">
+      <th class="type-filter"> <h5> <b> {{filter.name}} </b> </h5> </th>
+      <th class="options" > <input type="{{filter.type}}" value="{{filter.id}}"   (click)="filtrarPrice($event)" (click)="activarBtnPrice($event)" [checked]="filter.checked" id="option" name="option">  </th>
+  
+  
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="footer-modal">
+  <button class="btn clear-filter " id="clearPrice" name="clear"  (click)="clearPrice()"  [disabled]="true"> <h6><b > {{"BEER.CLEAN" | translate}}</b></h6></button>
+  <button class="btn filter" id="filtrar" name="filtrar"  (click)="modal.close()"> <b> {{"BEER.FILTERS" |translate}}</b> </button>
+ 
+</div>
+  
+</ng-template>
+
+
+
+<div class=" filt">
+  <input type="checkbox"  id="btn-filt">
+ 
+  <div class="option-filt">
+  <p class="filt-price" (click)="modal.open(filter)" ><img src="../../assets/svg/beer.svg" alt="" srcset=""></p>
+  <p class="filt-type" (click)="modal.open(filterPrice)" ><img src="../../assets/svg/dolar.svg" alt="" srcset=""></p>
+</div>
+<div class="div-filter">
+  <label for="btn-filt"> <img src="../../assets/svg/filters.svg" alt="" srcset="" ></label>
+ 
+  
+  </div>
+</div>

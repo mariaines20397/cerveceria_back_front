@@ -1,0 +1,97 @@
+{
+    
+    "HEADER":{
+        "IDIOM":"Lenguage"
+    },
+    "HOME":{
+        "1":"We have been dedicated to the Marketing and Distribution of beverages for more than 10 years.",
+        "2":"Thanks to our trajectory and experience in the field, we have the widest variety of products, brands, in different presentations and sizes.",
+        "3":"We offer quality of service, we ensure the conditions established in terms of delivery and distribution. We have a wide variety of national and imported products for mass consumption.",
+        "DRINKS":"Our drinks"
+    },
+    "FOOTER":{
+        "HELP":"We can help you?",
+        "CHART":"CHAT",
+        "CALL":"CALL",
+        "ABOUTUS": "ABOUT US",
+        "SECURITY": "SECURITY MEASURES (COVID-19)",
+        "HOWTOCALL": "HOW TO CALL",
+        "PROVIDER": "PROVIDER",
+        "CONTACT": "CONTACT",
+        "COVERAGE": "COVERAGE AREA",
+        "POLITICS":"PERSONAL DATA PROCESSING POLICY"
+    },
+    "CONTACT": {
+        "CONTACT":"Contact us",
+        "HEADER": "To prevent the spread of COVID-19, follow these tips:",
+        "EMAIL": "Email address",
+        "SECURITY": "We'll never share your email with anyone else.",
+        "PASSWORD": "Password",
+        "CHECK": "Check me out",
+        "SUBMIT":"Submit"
+    },
+    "SECURITY": {
+        "HEADER": "To prevent the spread of COVID-19, follow these tips:",
+        "BODY":{
+            "1":"- Keep a safe distance from other people (at least one meter), even if they don't appear to be sick.",
+            "2":"- Wear a mask in public, especially indoors or when it is not possible to maintain physical distance.",
+            "3":"- Prioritize open, well-ventilated spaces over closed spaces. If you are indoors, open a window.",
+            "4":"- Wash your hands frequently. Use soap and water or an alcohol-based hand sanitizer.",
+            "5":"- Get vaccinated when it's your turn. Follow local authority vaccination guidelines.",
+            "6":"- When you cough or sneeze, cover your nose and mouth with a bent elbow or a tissue.",
+            "7":"- If you are not feeling well, stay home."
+        },
+        "FOOTER":"In case you have a fever, cough, or shortness of breath, seek medical attention. Call before going to your healthcare provider so they can direct you to the right medical center. In this way, you will protect yourself and prevent the spread of viruses and other infections"
+    },
+    "HOWTOCALL": {
+        "HEADER": "Customer service",
+        "BODY":{
+            "1":"Service",
+            "2":"Number",
+            "3":"Customer Support",
+            "4":"Mobile telephony",
+            "5":"Landline telephony",
+            "6":"Internet"
+        }
+    },
+    "CHAMPAGNE":{
+       
+        "TITLE":"Champagne"
+    },
+    "BEER":{
+       
+        "TITLE":"Beer",
+        "ADD":"ADD",
+        "FILTER":"FILTERS",
+        "FILTER.PRICE":"FILTERS PRICE",
+        "FILTER.BLOND": "Blond",
+        "CLEAN":"CLEAN",
+        "FILTERS":"FILTER",
+        "CONTINUE":"Continue Choosing",
+        "WINE":"Wine"
+    },
+    "VODKA":{
+       
+        "TITLE":"Vodka"
+    },
+    "COVERAGE":{
+        "TITLE":"Coverage area",
+        "BODY":"¡We meet in much of America!"
+    },
+    "PROVIDER":{
+        "TITLE":"These are some of our suppliers"
+    },
+    "ERROR":{
+        "TITLE":"We are sorry..",
+        "BODY":"We can't find the page you want to access."
+    },
+    "ABOUT":{
+        "TITLE":"About Us",
+        "BODY":{
+            "1":"We have been dedicated to the Marketing and Distribution of beverages for more than 10 years.",
+            "2":"Thanks to our trajectory and experience in the field, we have the widest variety of products, brands, in different presentations and sizes.",
+            "3":"We offer quality of service, we ensure the conditions established in terms of delivery and distribution. We have a wide variety of national and imported products for mass consumption."
+        }
+    }
+    
+}
