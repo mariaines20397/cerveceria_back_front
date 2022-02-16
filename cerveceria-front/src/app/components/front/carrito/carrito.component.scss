@@ -1,10 +1,67 @@
-h1{
+@import '../../../../styles.scss';
+*{
+    padding: 0;
+    margin: 0;
+    background: $dark;
+  min-width: 520px;
+
+}
+.form-cart{
+    background: $dark;
+    
+    padding: 30px;
+}
+table{
+    background: $white;
+}
+.count{
     text-align: center;
 }
-.grid{
-    display: grid;
-    grid-template-columns: 900px 420px;
+img{
+    width: 4em;
 }
-.carrito{
-    border: 2px solid white;
+.title{
+    font-size: 13px;
+    text-align: center;
+    width: 20%;
+}
+.thead{
+    text-align: center;
+}
+input{
+    width: 30%;
+    margin:0 10px ;
+    text-align: center;
+}
+i{
+    font-size: 15px;
+    cursor: pointer;
+}
+.carritoVacio{
+    font-size: 120px;
+    color: black;
+}
+.price{
+    width: 20%;
+}
+.carrito-vacio{
+    text-align: center;
+    color: $white;
+
+    i{
+    color: $white;
+
+        font-size: 80px;
+        padding: 50px;
+    }
+    h3{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h4{
+        font-size: 20px;
+        font-weight: 100;
+        padding-bottom: 40px;
+        margin-bottom: 0;
+    }
 }

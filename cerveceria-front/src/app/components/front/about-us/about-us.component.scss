@@ -5,18 +5,26 @@
     background: $dark;
     color: $white;
     text-align: center;
+    padding-bottom: 15px;
+}
+.header h2{
+    font-size: 40px;
 }
 .container{
-    font-size: 1.2rem;
-    text-align: left;
-    padding: 40px;
-        
+    text-align: justify;
+    padding: 0 20px;
+  //  border: 2px solid white;
     img{
         float: right;
+        width: 50%;
+        margin-top: 5%;
+   // border: 2px solid white;
+padding: 0 40px 0 30px;
     }
     p{
-        width: 700px;
-        padding-bottom: 5px;
+        width: 95%;
+        padding-bottom: 15px;
+    font-size: 1.2rem;
         
     }
 }

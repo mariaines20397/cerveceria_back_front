@@ -16,7 +16,7 @@ URL_API='http://localhost:3000/products/'
     id_product : 0,
     name:"",
     description:"",
-    type_product:"",
+    type_product:0,
     price:0,
     img:""
 
@@ -39,11 +39,14 @@ URL_API='http://localhost:3000/products/'
     return this.http.delete(this.URL_API + id)
     
   }
-/*
-  putProduct(product:modelProducts){
-return this.http.put(`${this.URL_API}/${product._id}`,product)
+
+ /* putProduct(product:modelProducts){
+return this.http.put(`${this.URL_API}+${product._id}`,product)
   }*/
-  putProduct(id:String, product:modelProducts):Observable<any>{
-    return this.http.put(this.URL_API+id, product)
+ putProduct(product:modelProducts):Observable<any>{
+    return this.http.put(this.URL_API+product._id,product)
+      }
+      obtenerProduct(id:String):Observable<any>{
+        return this.http.get(this.URL_API+id)
       }
 }

@@ -5,37 +5,17 @@
 }
 .title{
     color: $white;
-    padding: 20px;
+    text-align: center;
+        font-size: 1.5rem;
+        padding-top: 50px;
 }
 .body{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1,1fr);
     grid-gap: 30px;
     padding: 40px;
-    
-}
-.cacho{
     img{
-        max-width: 800px;
-        max-height: auto;
-    }
-}
-.craft{
-    img{
-        max-width: 500px;
-        max-height: auto;
-    }
-    
-}
-.dobente{
-    img{
-        max-width: 300px;
-        max-height: auto;
-    }
-}
-.munich{
-    img{
-        max-width: 200px;
-        max-height: auto;
+        max-width: 50%;
+
     }
 }

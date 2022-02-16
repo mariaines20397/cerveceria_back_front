@@ -1,8 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { beer } from '../beer/beer';
 import { CarritoService } from '../../../services/carrito.service';
 import { ProductService } from '../../../services/product.service';
 import { ActivatedRoute } from '@angular/router';
+import { FormBuilder } from '@angular/forms';
+import { BackProductService } from 'src/app/services/back-product.service';
+import { modelProducts } from 'src/app/models/product';
 
 
 @Component({
@@ -11,52 +13,87 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./carrito.component.scss']
 })
 export class CarritoComponent implements OnInit {
- 
+ id:String
+ array:any[]=[]
+ arrayNuevo:any[]=[]
+ arrayId:any[]=[]
+ varId:String
+ product:modelProducts
+ productCarrito={}
+ add:number=1
+ cantidad:number
+ unitPrice:number
+  constructor(public backProduct: BackProductService, private aRouter:ActivatedRoute) {
+   this.id=this.aRouter.snapshot.paramMap.get('id')!
+   this.varId=this.id
+   
 
-  cartProduct:any[]=[]
-  arrCarrito:any[]=[];
-  arrProductCarrito:any[]=[]
-  arrProductsNew:any []=beer
-  /**
-   * Guarda el resultado que se arroje luego de aplicar el metodo filter() en la funcion
-   * filtrar y filtrarPrice. Luego es usado como parametro del metodo push aplicado en 
-   * newArray.
-   */
-  type_product:any=[]
-  arrListaProducts: any []=[];
-  carrito:any []=[]
-  carritoArray:any 
-//  mostrar:any[]=[]
-  constructor(private carritoService:CarritoService, private ruta:ActivatedRoute) {
-    this.ruta.params.subscribe(params=>{
-      console.log(params['id']);
-    this.carrito=this.carritoService.obtenerProduct(params['id'])
-      this.carritoArray= JSON.stringify(this.carrito)
-      
-      
-    })
+  this.product=this.backProduct.selectedProduct
+  this.cantidad=1
+  this.unitPrice=0
+
    }
 
   ngOnInit(): void {
+  this.carrito()
   
   }
-  sumarCarrito(event:any){
-    this.type_product=this.arrProductsNew.filter(id => id.id == event.target.value)
-    this.arrCarrito=[]
-    this.arrCarrito.push(this.type_product)
-    for (let i = 0; i < this.arrCarrito.length; i++) {
-      const element = this.arrCarrito[i];
-      for (let i = 0; i < element.length; i++) {
-        const obj = element[i];
-        this.arrProductCarrito.push(obj)
+
+  carrito(){
+    if(this.id!==null){
+     /* for (let i = 0; i <= this.arrayId.length; i++) {
+        const element = this.arrayId[i].push(this.id)
+        console.log('Este es el element',element);
+        
+      }*/
+     this.backProduct.obtenerProduct(this.id).subscribe(data=>
+      {
+        console.log('Este es el data del producto selleccionado',this.backProduct.selectedProduct=data);
+        console.log(this.backProduct.selectedProduct.name);
+    
+         this.productCarrito={
+        "name" : this.backProduct.selectedProduct.name,
+        "price":  this.backProduct.selectedProduct.price,
+        "img":  this.backProduct.selectedProduct.img
+         }
+        
+      this.arrayNuevo.push(this.productCarrito)
+      this.arrayNuevo.forEach(data=>{
+        this.array.push(data)
+        this.unitPrice=data.price
+      })
+      console.log(this.array);
+    
+        
       }
-    //console.log(this.arrProductCarrito);
-     this.carritoService.transportandoProductos.emit({productos : this.arrProductCarrito});
+      
+      )
+      
+      
     }
     
-     
-     
-     
-   }
+    
+  }
+
+  addPrice(){
+    this.add=this.cantidad
+     this.add=this.add+1
+    this.cantidad=this.add
+
+    this.arrayNuevo.forEach(data=>{
+      data.price = this.unitPrice * this.cantidad
+    })
+  }
+
+  removePrice(){
+    if (this.cantidad>1) {
+      let remove=this.cantidad
+      remove=remove-1
+      this.cantidad=remove
+      this.arrayNuevo.forEach(data=>{
+        data.price = data.price - this.unitPrice
+      })
+    }
+  }
   
 }

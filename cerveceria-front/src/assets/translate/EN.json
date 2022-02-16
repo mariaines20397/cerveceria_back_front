@@ -92,6 +92,27 @@
             "2":"Thanks to our trajectory and experience in the field, we have the widest variety of products, brands, in different presentations and sizes.",
             "3":"We offer quality of service, we ensure the conditions established in terms of delivery and distribution. We have a wide variety of national and imported products for mass consumption."
         }
+    },
+    "BACK":{
+        "GET":"Product Table",
+        "1":"Image",
+        "2":"Name",
+        "3":"Description",
+        "4":"Price",
+        "5":"Type of product",
+        "6":"Type of drink",
+        "7":"Actions",
+        "BTN-ADD":"+ Add product"
+    },
+    "BACK-ADD":{
+        "TITLE":"Create product",
+        "CLEAN":"Clean",
+        "SAVE":"Save",
+        "BACK":"Back"
+    },
+    "CARRITO":{
+        "TITLE":"Your cart is empty",
+        "SUBTITLE":"Don't know what to buy? Thousands of products await you!"
     }
     
 }

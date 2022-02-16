@@ -2,10 +2,9 @@
 
 .covid{
     background: $dark;
-    padding: 50px;
+    padding: 0 40px;
     color: $white;
     font-family: $font-family-body;
-    padding-top: 20px;
     .header{
         text-align: center;
         font-size: 1.5rem;
@@ -17,14 +16,17 @@
         text-align: justify;
         padding-bottom: 50px;
         img{
-            float: right;
-            padding-right: 15px;
-            
+            display: block;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        ul{
+            padding-right: 32px;
         }
     }
     .footer{
         font-size: 1.2rem;
-        text-align: center;
+        text-align: justify;
         padding-bottom: 50px;
     }
         

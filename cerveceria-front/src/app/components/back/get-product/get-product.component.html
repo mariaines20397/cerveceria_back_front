@@ -27,33 +27,107 @@
   </div>
 </div>
 -->
-<table class="table table-hover container">
+<h2>{{"BACK.GET"|translate}}</h2>
+<div class="btn-add">
+
+  <button [routerLink]="['/addProduct']" class="btn btn-success">{{"BACK.BTN-ADD"|translate}}</button>
+</div>
+<div class="container">
+<table class="table table-hover container ">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Imagen</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Descripción</th>
-      <th scope="col">Precio</th>
-      <th scope="col">Tipo de producto</th>
-      <th scope="col">Tipo de bebida</th>
-      <th scope="col">Acciones</th>
+      
+      <th scope="col">{{"BACK.1"|translate}}</th>
+      <th scope="col">{{"BACK.2"|translate}}</th>
+      <th scope="col">{{"BACK.3"|translate}}</th>
+      <th scope="col">{{"BACK.4"|translate}}</th>
+      <th scope="col">{{"BACK.5"|translate}}</th>
+      <th scope="col">{{"BACK.6"|translate}}</th>
+      <th scope="col">{{"BACK.7"|translate}}</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let product of backProduct.products" >
-      <th scope="row">1</th>
-      <td>{{product.img}}</td>
+     <td class="image"><img src="{{product.img}}" alt="" srcset=""></td>
+     
       <td>{{product.name}}</td>
       <td>{{product.description}}</td>
       <td>${{product.price}}</td>
       <td>{{product.id_product}}</td>
       <td>{{product.type_product}}</td>
-      <td >
-        <button class="btn btn-secondary btn-sm" [routerLink]="['/editProduct',product._id]" ><i class="fas fa-edit"></i></button>
+      <td class="action" >
+        <!--[routerLink]="['/editProduct',product._id]"-->
+        <button class="btn btn-secondary btn-sm" (click)="modal.open(edit)" (click)="editProduct(product)"><i class="fa-light fa-pen"></i> </button>
         <button class="btn btn-danger btn-sm" (click)="deleteProduct(product._id)"><i class="fas fa-trash-alt"></i></button>
       </td>
     </tr>
     
   </tbody>
 </table>
+</div>
+<ng-template #edit let-modal >
+  <!-----------------------------------MODAL editar---------------------------->
+   <div class="modal-header ">
+     <h1 class="modal-title"> <b> Editar</b></h1>
+     <button class="btn btn-close" (click)="modal.dismiss()"></button>
+   </div>
+   <div class="modal-body ">
+     
+    <form #productForm="ngForm"  >
+      <input type="hidden" name="_id" [(ngModel)]="backProduct.selectedProduct._id">
+      <div class="form-edit form-group mb-2 mt-2">
+          <select name="id_product" id="id_product" [(ngModel)]="backProduct.selectedProduct.id_product">
+          <option value="1">Cerveza</option>    
+          <option value="2">Vodka</option>    
+          <option value="3">Champagne</option>    
+          </select>
+          
+       <!--   <input type="number" name="id_product" class="form-control" placeholder="Tipo de bebida" [(ngModel)]="backProduct.selectedProduct.id_product">-->
+      </div>
+      <div class="form-group mb-2 mt-2">
+          <input type="text" name="name" class="form-control" placeholder="Nombre de la bebida" [(ngModel)]="backProduct.selectedProduct.name">
+      </div>
+      <div class="form-group mb-2">
+          <input type="text" name="description" class="form-control" placeholder="Descripcion" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.description">
+      </div>
+      <div class="form-group mb-2">
+          <select name="type_product" id="type_product" *ngIf="product.id_product==1" [(ngModel)]="backProduct.selectedProduct.type_product">
+              
+              <option value="1" [defaultSelected]="true">Rubia</option>    
+              <option value="2">Morena</option>    
+              <option value="3">Roja</option>    
+          </select>
+          <select name="type_product" id="type_product" *ngIf="product.id_product==2" [(ngModel)]="backProduct.selectedProduct.type_product">
+              <option value="1">Absolut</option>    
+              <option value="2">Bols</option>    
+              <option value="3">Sernova</option>    
+              <option value="4">Skyy</option>    
+              <option value="5">Smirnoff</option>    
+          </select>
+          <select name="type_product" id="type_product" *ngIf="product.id_product==3" [(ngModel)]="backProduct.selectedProduct.type_product">
+              <option value="1">0.75 litros</option>    
+              <option value="2">1 litro</option>    
+              <option value="3">1.5 litros</option>  
+          </select>
+         
+      </div>
+      <div class="form-group mb-2">
+          <input type="number" name="price" class="form-control" placeholder="Precio" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.price">
+      </div>
+      <div class="form-group mb-2">
+          <input type="text" name="img" class="form-control" placeholder="Img" aria-describedby="helpId" [(ngModel)]="backProduct.selectedProduct.img">
+      </div>
+    
+  </form>
+
+
+   </div>
+   <div class="footer-modal">
+  
+       
+       <button class="btn update" id="update" name="update" (click)="updateProduct(productForm)" > <b> ACTUALIZAR</b> </button>
+      
+   </div>
+ 
+   
+ </ng-template>

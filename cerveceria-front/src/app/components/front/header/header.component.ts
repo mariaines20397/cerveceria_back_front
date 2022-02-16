@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
    * Variable boolean que ayudará a saber su fue seleccionado el menu 
    */
   menu=false;
+  search=false;
   constructor(public modal:NgbModal, private translate:TranslateService, public productService:ProductService ) { 
     
     this.activeLang = this.translate.currentLang
@@ -45,6 +46,13 @@ export class HeaderComponent implements OnInit {
       this.menu=true
     }else{
       this.menu=false
+    }
+  }
+  public Search() {
+    if (this.search==false) {
+      this.search=true
+    }else{
+      this.search=false
     }
   }
 }

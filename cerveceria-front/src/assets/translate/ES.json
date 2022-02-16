@@ -86,6 +86,27 @@
         "2":" Gracias a nuestra trayectoria y experiencia en el rubro contamos con la más amplia variedad de productos, marcas, en distintas presentaciones y tamaños.",
         "3":"Ofrecemos calidad de servicio, aseguramos las condiciones pautadas en materia de entrega y distribución. Contamos con una amplia variedad de productos nacionales e importados de consumo masivo."
         }
+    },
+    "BACK":{
+        "GET":"Tabla de productos",
+        "1":"Imagen",
+        "2":"Nombre",
+        "3":"Descripcion",
+        "4":"Precio",
+        "5":"Tipo de producto",
+        "6":"Tipo de bebida",
+        "7":"Acciones",
+        "BTN-ADD":"+ Agregar producto"
+    },
+    "BACK-ADD":{
+        "TITLE":"Crear producto",
+        "CLEAN":"Limpiar",
+        "SAVE":"Guardar",
+        "BACK":"Volver"
+    },
+    "CARRITO":{
+        "TITLE":"Tu carrito está vacío",
+        "SUBTITLE":"¿No sabés qué comprar? ¡Miles de productos te esperan!"
     }
 
 

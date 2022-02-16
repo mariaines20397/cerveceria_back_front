@@ -2,14 +2,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&family=Satisfy&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
 <div class="header ">
-    <div class="menu"><button class="btn" (click)="Menu()"><img src="../../assets/svg/menu.svg" alt="" srcset=""></button></div>
+    <div class="header-left">
+    <div class="menu"><button class="btn" (click)="Menu()"><i class="fa-solid fa-bars"></i></button></div>
     <div class="logo" ><button class="btn" [routerLink]="['/']"><img src="../../assets/svg/logo.svg" alt="" srcset=""></button></div>
-
+</div>
     <div class=" lang">
         <input type="checkbox"  id="btn-lang">
         <div class="btn-lang">
             <button class="btn">
-                <img src="../../assets/img/mundo.png" alt="" srcset=""><br>
+                <i class="fa-solid fa-earth-americas"></i><br>
+                <!--<img src="../../assets/img/mundo.png" alt="" srcset=""><br>-->
                 
             <label class="btn-title" for="btn-lang"> <b> {{"HEADER.IDIOM" | translate}} </b> </label></button>
             
@@ -20,38 +22,26 @@
     </div>
     
     </div>
-    <!--
-    <ng-template #cart let-modal>
-        <div class="modal-header ">
-         <h1 class="modal-title"> <b> {{'BEER.FILTER.PRICE' | translate}}</b></h1>
-         <button class="btn btn-close" (click)="modal.dismiss()"></button>
-       </div>
-       <div class="modal-body ">
-          
-           
-           
-        
-       </div>
-       <div class="footer-modal">
-         <button class="btn clear-filter " id="clearPrice" name="clear"    [disabled]="true"> <h6><b > {{"BEER.CLEAN" | translate}}</b></h6></button>
-         <button class="btn filter" id="filtrar" name="filtrar"  (click)="modal.close()"> <b> {{"BEER.FILTERS" |translate}}</b> </button>
-        
-       </div>
-         
-       </ng-template>
--->
-    <div class="cart"><button class="btn" > <img src="../../assets/svg/cart.svg" alt="" srcset=""></button></div>
-    <div class="search"><button class="btn"><img src="../../assets/svg/search.svg" alt="" srcset=""></button></div>
+    <div class="header-right">
+    <div class="search"><button class="btn" (click)="Search() "><i class="fa-solid fa-magnifying-glass"></i></button></div>
+    <div class="cart"><button class="btn" [routerLink]="['/cart']" > <i class="fa-solid fa-cart-shopping"></i></button></div>
+    
+</div>
     
 </div>
 <div *ngIf="menu" class="abrirMenu">
+    <div><h2>Bebidas</h2></div> <br>
     <div class="listMenu">
+        
         <div><button class="btn" [routerLink]="['/beer']"><h4>{{'BEER.TITLE' | translate}}</h4></button></div>
         <div><button class="btn" [routerLink]="['/vodka']"><h4>{{'VODKA.TITLE' | translate}}</h4></button></div>
         <div><button class="btn" [routerLink]="['/champagne']"><h4>{{'CHAMPAGNE.TITLE' | translate}}</h4></button></div>
     </div>
 </div>
 
-
+<div class="searchProduct" *ngIf="search">
+    <div class="cajaSearch"><h5>Busca un producto</h5>
+    <input type="text">
+    </div></div>
 
 

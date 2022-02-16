@@ -1,276 +1,146 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
 
-
-.body{
-    background: $dark;
-   //background: url(../../assets/img/portada_cerveza.jpg) no-repeat;
-   
-   
-    padding-bottom: 25px;
-    font-family: $font-family-body;
-  
+.body {
+  background: $dark;
+  min-width: 520px;
+  padding-bottom: 25px;
+  font-family: $font-family-body;
 }
-#title{
-    font-family: $font-family-title;
-    
-   //font-family: 'Lemon', cursive;
-    font-size: 5.3rem;
-    
-    
+#title {
+  font-family: $font-family-title;
+  font-size: 5.3rem;
 }
 
-.title{
-    text-decoration: none;
-     height: 20vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background: $dark;
-     color: $white;
-     
-    
-    // font-family: 'Barlow Semi Condensed', sans-serif;
- 
-    
- }
-
-.container-lg{
-    display: grid;
-    grid-template-columns: repeat(3, 300px) ;
-    grid-gap: 10px;
-    margin: 0;
-    padding: 0;
-    border-right: 2px solid white;
+.title {
+  text-decoration: none;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $dark;
+  color: $white;
 }
 
-.card-lg{
-    justify-self: center;
-    width: 15rem;
-    text-align: center;
-    border: 1px solid $dark;
-    border-radius: 1%;
-    //color: $white;
-    color: $dark;
-    transition: all 500ms ease;  
-}
-.card-lg:hover{
-    transform: scale(0.9);
-}
-.card-body{
-    background: $degrade-card;
-    
-}
-.img-beer{
-    background: $white;
+.container-lg {
+  display: grid;
+  grid-template-columns: repeat(2, 18fr);
+  grid-gap: 10px;
 }
 
-.card-text{
-    height: 70px;
+.card-lg {
+  justify-self: center;
+  width: 90%;
+  text-align: center;
+  border: 1px solid $dark;
+  border-radius: 5%;
+  color: $dark;
+  transition: all 500ms ease;
 }
-.btn-add{
-   
-    width: 100%;
-   // background: #cc720c;
-   background: $degrade-dorado;
-   // color: $white;
-    //border: none;
-    color: $dark;
-    
+.card-body {
+  background: $degrade-card;
+}
+.img-beer {
+  background: $white;
 }
 
-#btn-filt{
-    display: none;
+.card-text {
+  height: 70px;
 }
-.filt{
-    
-     position: fixed;
-     bottom: 20px ;
-     right: 35px;
-     text-align: center;
-    
-    // background: $white;
-     
- }
- .option-filt p, .div-filter{
-     display: block;
-     //background: $white;
-     color: $white;
-     height: 55px;
-     width: 55px;
-     text-align: center;
-     border-radius: 50%;
-     transition: all 500ms ease;
- }
- 
- .div-filter:hover{
-    background: $hover-filter;
- }
- .option-filt p{
-     margin-bottom: -15px;
-     opacity: 0;
-     visibility: hidden;
- }
- #btn-filt:checked~ .option-filt p{
-     margin-bottom: 10px;
-     opacity: 1;
-     visibility: visible;
- }
+.btn-add {
+  width: 100%;
+  background: $degrade-dorado;
+  color: $dark;
+}
 
-.card-vinos{
-   
-   grid-column: 1/ span 2;
+#btn-filt {
+  display: none;
 }
-.btn-close{
-    position: absolute;
-    right: 30px;
-    color: $white;
+.filt {
+  position: fixed;
+  bottom: 20px;
+  right: 35px;
+  text-align: center;
 }
-.btn-close:hover{
-    color: $white;
+.option-filt p,
+.div-filter {
+  display: block;
+  color: $white;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 500ms ease;
+}
+
+.div-filter:hover {
+  background: $hover-filter;
+}
+.option-filt p {
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-filt:checked ~ .option-filt p {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+.btn-close {
+  position: absolute;
+  right: 30px;
+}
+.btn-close:hover {
+  color: $white;
 }
 .modal-body {
-    background: $degrade-card;
-    color: $white;
+  background: $dark;
+  color: $white;
 }
-.tbody-modal{
-    color: $white;
+.tbody-modal {
+  color: $white;
 }
-.modal-header{
-    background: $degrade-dorado;
-    color: $dark;
-    text-align: center;
+.modal-header {
+  background: $degrade-dorado;
+  color: $dark;
+  text-align: center;
 }
-.title-table{
-    text-align: center;
+.title-table {
+  text-align: center;
 }
-.type-filter{
-   padding-left:80px ;
+.type-filter {
+  padding-left: 80px;
 }
-.footer-modal{
-    background: $footer-modal;
-    
-    display: flex;
-    justify-content: center;
-}
-.filter{
-    //display: flex;
-    text-align: center;
-    color: $white;
-    width: 120px;
-    background: $medium-blue;
-    margin: 15px;
+.footer-modal {
+  background: $dark;
 
-    
+  display: flex;
+  justify-content: space-around;
+}
+.filter {
+  text-align: center;
+  color: $white;
+  width: 120px;
+  background: $medium-blue;
+  margin: 15px;
 }
 
-.clear-filter{
-   background: salmon;
-    text-align: center;
-    color:$white;
-    width: 120px;
-    margin: 15px;
-    border: 2px solid salmon;
-    
-    
+.clear-filter {
+  background: salmon;
+  text-align: center;
+  color: $white;
+  width: 120px;
+  margin: 15px;
+  border: 2px solid salmon;
 }
-
-
-@media screen and (max-width: 768px) {
-    .container-xs{
-        display: grid;
-        grid-template-columns: repeat(3, 18fr);
-        grid-gap: 5px;
-    }
-    .filt{
-    
-        bottom: 5px ;
-        right: 10px;
-        
-    }
-    .div-filter{
-        background: $dark;
-
-     }
-     #title{
-        
-        font-size: 4rem;
-    }
-   
+@media (min-width: 750px) {
+  .container-lg {
+    grid-template-columns: repeat(3, 18fr);
+    grid-gap: 20px;
+  }
 }
-
-@media screen and (max-width: 576px) {
-    .container-xs{
-        display: grid;
-        grid-template-columns: repeat(2, 18fr);
-        grid-gap: 5px;
-    }
-    .filt{
-    
-        bottom: 5px ;
-        right: 10px;
-        
-    }
-    .div-filter{
-        background: $dark;
-
-     }
-     #title{
-        
-        font-size: 3rem;
-    }
-   
+@media (min-width: 1000px) {
+  .container-lg {
+    grid-template-columns: repeat(4, 18fr);
+    grid-gap: 5px;
+  }
 }
-@media screen and (max-width: 360px) {
-    .container-xs{
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        grid-gap: 3px;
-        
-    }
-    .card-lg{
-        width: 10rem;
-        text-align: center;
-        border: 1px solid $dark;
-        border-radius: 1%;
-        
-        .card-title{
-            font-size: 12px;
-        }
-        .card-text{
-            font-size: 12px;
-        }
-        .card-price{
-            font-size: medium;
-        }
-        
-    }
-    .btn-filter{
-        position: fixed;
-        bottom: 20px ;
-        text-align: center;
-        width: 60px;
-        background: $reverse-hover-filter;
-        
-        border-radius: 50%;
-    }
-    .btn-filter:hover{
-        background: $hover-filter;
-         border: 2px solid $white;
-    }
-    .filt{
-    
-        bottom: 5px ;
-        right: 10px;
-        
-    }
-    .div-filter{
-        background: $dark;
-
-     }
-     #title{
-        
-        font-size: 2.2rem;
-    }
-   
-}
-

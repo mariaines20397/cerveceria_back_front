@@ -1,5 +1,31 @@
 <!--<app-beer [dataEntrante]="detalledelvideo" *ngFor="let detalledelvideo of arrProductCarrito"></app-beer>-->
-<h1>Carrito</h1>
-<div *ngIf="carrito">
-<h1>producto: {{carrito}}</h1>
+
+<div *ngFor="let carrito of array" class="form-cart" >
+    <table class="table table-striped ">
+        <thead>
+            <tr>
+              <th scope="col" colspan="4" class="thead">Carrito</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td class="img"><img src="{{carrito.img}}" alt=""></td>
+            <td class="title">{{carrito.name}}</td>
+            <td class="count">
+              <i class="fa-solid fa-minus" (click)="removePrice()" ></i>
+            <input type="number" name="count" id="count" min="1"  [ngModel]="cantidad">
+            <i class="fa-solid fa-plus" (click)="addPrice()"></i>
+            <td class="price">${{carrito.price}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+
+
+</div>
+<div class="carrito-vacio" *ngIf="array.length==0">
+  <div><i class="fa-solid fa-cart-shopping carritoVacio"></i></div>
+  <div><h3>{{'CARRITO.TITLE' | translate}}</h3></div>
+  <div><h4>{{'CARRITO.SUBTITLE' | translate}}</h4></div>
 </div>

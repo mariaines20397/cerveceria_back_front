@@ -1,12 +1,17 @@
 @import '../../../../styles.scss';
 .coverage{
     background: $dark;
-    text-align: center;
     font-family: $font-family-body;
     padding-bottom: 20px;
 }
 .title{
     color: $white;
     padding: 20px;
+    text-align: center;
 
+}
+.coverage img{
+    width: 70%;
+    display: block;
+    margin: auto;
 }

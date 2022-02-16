@@ -1,19 +1,22 @@
 @import '../../../../styles.scss';
 *{
     font-family: $font-family-body;
-    font-size: 1.7rem;
+  //  font-size: 1.7rem;
 }
 .footer{
-    background:$reverse-hover-filter;
-    border: 0.7px solid $dark;
-    height: 300px;
+  //  background:$reverse-hover-filter;
+   // border: 0.7px solid $dark;
+    height: 230px;
     background: $degrade-dorado;
+    
+min-width: 520px;
+
 }
 
 .help{
-    display: inline;
+   // display: inline;
     text-align: center;
-    padding: 20px;
+    padding: 30px 0 0;
     color: $white;
 }
 .icon{
@@ -37,20 +40,23 @@
     justify-content: center;
     
     h6{
-        margin-left: 30px;
-        margin-right: 20px;
+        margin-left: 35px;
+        margin-right: 35px;
         color: $white;
         
     }
     
 }
 .list-footer{
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
     background: $dark;
+    
+min-width: 520px;
+
     div{
-        margin-bottom: 40px;
+        padding-bottom: 20px;
         color: $white;
         h4{
             cursor: pointer;
@@ -74,12 +80,14 @@
 }
 .footer-end{
     background: $reverse-hover-filter;
-    border: 0.7px solid $dark;
-    height: 90px;
+   // border: 0.7px solid $dark;
+    height: 30px;
     background: $degrade-dorado;
-   // margin-top: 20px;
-}
+   
+min-width: 520px;
 
+}
+/*
 @media screen and (max-width: 360px)  {
     .list-footer{
         padding-top:90px;
@@ -93,3 +101,4 @@
     
    
 }
+*/
